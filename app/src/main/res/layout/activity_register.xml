@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="40sp"
+        android:id="@+id/back"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat Akun"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="60sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/buatakun"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:layout_below="@+id/buatakun"
+        android:layout_marginTop="20dp"
+        android:text="NAMA LENGKAP"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nama"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="20dp"
+        android:text="EMAIL"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/email"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dp"
+        android:text="KATA SANDI"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/katasandi"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak"
+        android:layout_below="@+id/katasandi"
+        android:layout_marginTop="20dp"
+        android:text="KONFIRMASI KATA SANDI"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/konfirmasi"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/konfirmasi"
+        android:layout_marginLeft="100sp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male">
+
+        </RadioButton>
+
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/konfirmasi"
+        android:layout_marginLeft="200sp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/konfirmasi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Daftar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/btndaftar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah memiliki akun?"
+        android:layout_below="@+id/btndaftar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:textColor="@color/black"
+        android:id="@+id/sudah"/>
+
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btndaftar"
+        android:layout_marginTop="50sp"
+        android:text="Login"
+        android:textColor="@color/orange"
+        android:layout_marginHorizontal="280sp"/>
+
+
+</RelativeLayout>

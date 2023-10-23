@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:id="@+id/logo">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gabung"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="80sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:id="@+id/txtgabung"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tolong masuk untuk melanjutkan."
+        android:layout_below="@id/txtgabung"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tlong"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlong"
+        android:background="@drawable/kotak"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text="Gmail"
+        android:id="@+id/gmail"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmail"
+        android:background="@drawable/kotak"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:text="Kata Sandi"
+        android:id="@+id/katasandi"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/katasandi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Masuk"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/btnlogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum memiliki akun?"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180sp"
+        android:textColor="@color/black"
+        android:id="@+id/akun"/>
+
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="179dp"
+        android:text="Daftar"
+        android:textColor="@color/orange"
+        android:layout_marginHorizontal="280sp"/>
+
+
+
+</RelativeLayout>
